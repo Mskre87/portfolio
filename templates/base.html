@@ -1,0 +1,23 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{% block title %}Dimitri Bachkatov{% endblock %}</title>
+
+    <meta
+      name="description"
+      content="Portafolio de Dimitri Bachkatov, desarrollador Full Stack especializado en Django y desarrollo web."
+    />
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+  </head>
+
+  <body>
+    {% block content %} {% endblock %}
+
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
