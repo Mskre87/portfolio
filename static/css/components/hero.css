@@ -1,0 +1,95 @@
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    max-width: 760px;
+}
+
+.hero__eyebrow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+
+    margin-bottom: var(--space-6);
+}
+
+.hero__eyebrow span {
+    color: var(--color-text-muted);
+
+    font-size: .8rem;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+}
+
+.hero__title {
+
+    margin: 0;
+
+    font-size: var(--font-size-display);
+
+    font-weight: var(--font-weight-bold);
+
+    line-height: .95;
+
+    letter-spacing: var(--letter-spacing-tight);
+
+}
+
+.hero__description {
+
+    max-width: 620px;
+
+    margin-top: var(--space-8);
+
+    margin-bottom: var(--space-10);
+
+    color: var(--color-text-secondary);
+
+    font-size: 1.2rem;
+
+    line-height: 1.75;
+
+}
+
+.hero__actions {
+
+    display: flex;
+
+    gap: var(--space-4);
+
+    flex-wrap: wrap;
+
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        min-height: auto;
+
+        padding-block: 7rem;
+
+    }
+
+    .hero__title {
+
+        line-height: 1;
+
+    }
+
+    .hero__description {
+
+        font-size: 1.05rem;
+
+    }
+
+}

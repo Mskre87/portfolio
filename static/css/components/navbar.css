@@ -1,0 +1,94 @@
+/* ========================================
+   NAVBAR
+======================================== */
+
+
+.navbar {
+
+    width: 100%;
+
+    position: relative;
+
+    padding-block: var(--space-6);
+
+}
+
+
+.navbar__container {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+/* ========================================
+   BRAND
+======================================== */
+
+
+.navbar__brand {
+
+    font-size: 1.25rem;
+
+    font-weight: var(--font-weight-semibold);
+
+    letter-spacing: var(--letter-spacing-tight);
+
+}
+
+
+.navbar__brand span {
+
+    color: var(--color-accent);
+
+}
+
+
+
+/* ========================================
+   LINKS
+======================================== */
+
+
+.navbar__links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-8);
+
+}
+
+
+.navbar__link {
+
+    color: var(--color-text-secondary);
+
+    font-size: var(--font-size-body-sm);
+
+}
+
+
+.navbar__link:hover {
+
+    color: var(--color-text-primary);
+
+}
+
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+
+.navbar__button {
+
+    font-size: var(--font-size-body-sm);
+
+}
