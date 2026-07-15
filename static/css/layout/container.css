@@ -1,0 +1,18 @@
+/* ========================================
+   CONTAINERS
+======================================== */
+
+.container {
+    width: min(100% - 2rem, var(--container-width));
+    margin-inline: auto;
+}
+
+.container-narrow {
+    width: min(100% - 2rem, var(--container-narrow));
+    margin-inline: auto;
+}
+
+.container-wide {
+    width: min(100% - 2rem, 1440px);
+    margin-inline: auto;
+}

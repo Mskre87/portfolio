@@ -1,0 +1,15 @@
+/* ========================================
+   SECTIONS
+======================================== */
+
+section {
+    padding-block: var(--space-10);
+}
+
+.section-sm {
+    padding-block: var(--space-8);
+}
+
+.section-lg {
+    padding-block: calc(var(--space-10) * 1.5);
+}
