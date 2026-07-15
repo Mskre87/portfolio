@@ -1,7 +1,20 @@
-@import url("reset.css");
-@import url("variables.css");
-@import url("typography.css");
-@import url("layout.css");
-@import url("components.css");
-@import url("animations.css");
-@import url("responsive.css");
+@import url("abstracts/variables.css");
+@import url("abstracts/reset.css");
+@import url("abstracts/typography.css");
+@import url("abstracts/animations.css");
+
+@import url("layout/container.css");
+@import url("layout/grid.css");
+@import url("layout/sections.css");
+
+@import url("components/button.css");
+@import url("components/navbar.css");
+@import url("components/hero.css");
+@import url("components/card.css");
+@import url("components/badge.css");
+@import url("components/footer.css");
+
+@import url("pages/home.css");
+@import url("pages/ui.css");
+
+@import url("utilities/helpers.css");

@@ -1,0 +1,111 @@
+/* ========================================
+   BASE TYPOGRAPHY
+======================================== */
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body);
+
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+}
+
+/* ========================================
+   TEXT SELECTION
+======================================== */
+
+::selection {
+    background: var(--color-accent);
+    color: var(--color-text-primary);
+}
+
+/* ========================================
+   DISPLAY & HEADINGS
+======================================== */
+
+.display,
+.heading-xl {
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+.heading-lg,
+.heading-md,
+.heading-sm {
+    line-height: var(--line-height-heading);
+}
+
+.display {
+    font-size: var(--font-size-display);
+}
+
+.heading-xl {
+    font-size: var(--font-size-heading-xl);
+}
+
+.heading-lg {
+    font-size: var(--font-size-heading-lg);
+    font-weight: var(--font-weight-bold);
+}
+
+.heading-md {
+    font-size: var(--font-size-heading-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.heading-sm {
+    font-size: var(--font-size-heading-sm);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* ========================================
+   BODY
+======================================== */
+
+.body-lg {
+    font-size: var(--font-size-body-lg);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body);
+}
+
+.body {
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body);
+}
+
+.body-sm {
+    font-size: var(--font-size-body-sm);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body);
+}
+
+/* ========================================
+   CAPTION
+======================================== */
+
+.caption {
+    font-size: var(--font-size-caption);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+}
+
+/* ========================================
+   LINKS
+======================================== */
+
+a {
+    color: inherit;
+    transition: color var(--transition-base);
+}

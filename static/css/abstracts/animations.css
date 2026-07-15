@@ -1,0 +1,42 @@
+/* ========================================
+   GLOBAL TRANSITIONS
+======================================== */
+
+* {
+    transition:
+        color var(--transition-base),
+        background-color var(--transition-base),
+        border-color var(--transition-base),
+        opacity var(--transition-base),
+        transform var(--transition-base);
+}
+
+/* ========================================
+   HOVER EFFECTS
+======================================== */
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+}
+
+.hover-scale:hover {
+    transform: scale(1.03);
+}
+
+/* ========================================
+   FADE
+======================================== */
+
+.fade-in {
+    animation: fadeIn .6s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
