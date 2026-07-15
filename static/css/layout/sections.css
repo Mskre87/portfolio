@@ -1,15 +1,43 @@
 /* ========================================
-   SECTIONS
+   SECTION
 ======================================== */
 
-section {
-    padding-block: var(--space-10);
+.section {
+
+    padding-block: 8rem;
+
 }
 
-.section-sm {
-    padding-block: var(--space-8);
+.section-header {
+
+    margin-bottom: 4rem;
+
 }
 
-.section-lg {
-    padding-block: calc(var(--space-10) * 1.5);
+.section-label {
+
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    color: var(--color-accent);
+
+    font-size: .85rem;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: .12em;
+
+}
+
+.section-title {
+
+    max-width: 700px;
+
+    font-size: clamp(2rem, 4vw, 3.5rem);
+
+    line-height: 1.1;
+
 }

@@ -1,0 +1,27 @@
+/* ========================================
+   ABOUT
+======================================== */
+
+.about {
+
+    padding-block: 9rem;
+
+}
+
+.about__content {
+
+    max-width: 760px;
+
+}
+
+.about__content p {
+
+    margin-bottom: 2rem;
+
+    color: var(--color-text-secondary);
+
+    font-size: 1.15rem;
+
+    line-height: 1.9;
+
+}
