@@ -1,0 +1,43 @@
+/* ========================================
+   SECTION TITLE
+======================================== */
+
+.section-header{
+
+    margin-bottom:4rem;
+
+    max-width:720px;
+
+}
+
+.section-label{
+
+    display:inline-block;
+
+    margin-bottom:1rem;
+
+    color:var(--color-accent);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+.section-title{
+
+    margin-bottom:1rem;
+
+}
+
+.section-description{
+
+    color:var(--color-text-secondary);
+
+    max-width:640px;
+
+}

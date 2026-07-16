@@ -1,0 +1,49 @@
+<section class="projects section reveal" id="work">
+
+    <div class="container">
+
+        {% include "components/ui/section_title.html" with label="Work" title="Selected projects." description="A curated selection of software engineering projects currently under development." %}
+
+        <div class="projects__list">
+
+            {% for project in projects %}
+
+                <article class="project-card">
+
+                    <span class="project-card__status">
+
+                        {{ project.status }}
+
+                    </span>
+
+                    <h3>
+
+                        {{ project.title }}
+
+                    </h3>
+
+                    <p>
+
+                        {{ project.description }}
+
+                    </p>
+
+                    <ul class="project-card__tech">
+
+                        {% for tech in project.technologies %}
+
+                            <li>{{ tech }}</li>
+
+                        {% endfor %}
+
+                    </ul>
+
+                </article>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
