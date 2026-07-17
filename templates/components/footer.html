@@ -1,72 +1,54 @@
-<footer class="footer reveal">
+<footer class="footer">
 
     <div class="container">
 
-        <div class="footer__grid">
+        <div class="footer__content">
 
-            <div>
+            <div class="footer__brand">
 
-                <h2 class="footer__brand">
-                    Bachkatov<span>.</span>
+                <h2 class="footer__logo">
+                    {{ site.name }}<span>.</span>
                 </h2>
 
-                <p class="footer__description">
-                    Building software, uncovering vulnerabilities,
-                    and engineering secure digital experiences.
+                <p class="footer__tagline">
+                    {{ site.tagline }}
                 </p>
 
             </div>
 
-            <div>
+            <nav class="footer__links">
 
-                <h4>Navigation</h4>
+                {% if site.github %}
+                <a href="{{ site.github }}" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+                {% endif %}
 
-                <nav class="footer__links">
+                {% if site.linkedin %}
+                <a href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+                {% endif %}
 
-                    <a href="#about">About</a>
-                    <a href="#certifications">Certifications</a>
+                {% if site.credly %}
+                <a href="{{ site.credly }}" target="_blank" rel="noopener noreferrer">
+                    Credly
+                </a>
+                {% endif %}
 
-                </nav>
+                {% if site.hackerone %}
+                <a href="{{ site.hackerone }}" target="_blank" rel="noopener noreferrer">
+                    HackerOne
+                </a>
+                {% endif %}
 
-            </div>
-
-            <div>
-
-                <h4>Connect</h4>
-
-                <nav class="footer__links">
-
-                    <a href="https://github.com/Mskre87"
-                       target="_blank"
-                       rel="noopener noreferrer">
-
-                        GitHub
-
-                    </a>
-
-                    <a href="#">
-
-                        LinkedIn
-
-                    </a>
-
-                    <a href="#">
-
-                        HackerOne (mskre)
-
-                    </a>
-
-                </nav>
-
-            </div>
+            </nav>
 
         </div>
 
         <div class="footer__bottom">
 
-            <span>
-                © 2026 Bachkatov. Built with Django.
-            </span>
+            <p>{{ site.copyright }}</p>
 
         </div>
 

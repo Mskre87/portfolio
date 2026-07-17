@@ -127,26 +127,6 @@
 
 }
 
-/* Placeholder hasta agregar la fotografía */
-
-.hero__visual::before {
-
-    content: "";
-
-    width: 360px;
-    height: 360px;
-
-    border: 1px solid var(--color-border);
-
-    border-radius: 50%;
-
-    background:
-        radial-gradient(circle at center,
-            rgba(139, 92, 246, .12),
-            transparent 70%);
-
-}
-
 @media (max-width: 1024px) {
 
     .hero {
@@ -190,30 +170,31 @@
 .hero__image {
 
     width: 360px;
+
     aspect-ratio: 1;
 
     object-fit: cover;
+
+    object-position: center 18%;
 
     border-radius: 50%;
 
     border: 1px solid var(--color-border);
 
     box-shadow:
-        0 0 0 1px rgba(255,255,255,.03),
-        0 30px 80px rgba(0,0,0,.35);
+        0 24px 70px rgba(0,0,0,.30);
 
     transition:
-        transform .35s ease,
-        box-shadow .35s ease;
+        transform .3s ease,
+        box-shadow .3s ease;
 
 }
 
 .hero__image:hover {
 
-    transform: translateY(-6px);
+    transform: translateY(-5px);
 
     box-shadow:
-        0 0 0 1px rgba(139,92,246,.25),
-        0 35px 90px rgba(0,0,0,.45);
+        0 35px 90px rgba(0,0,0,.40);
 
 }

@@ -1,0 +1,39 @@
+<section class="current-focus section reveal" id="focus">
+
+    <div class="container">
+
+        {% include "components/ui/section_title.html" with label="Current Focus" title="What I'm working on today." description="The areas where I'm continuously learning and building expertise." %}
+
+        <div class="focus-grid">
+
+            {% for area in current_focus %}
+
+                <article class="focus-card">
+
+                    <span class="focus-card__status">
+
+                        {{ area.status }}
+
+                    </span>
+
+                    <h3>
+
+                        {{ area.title }}
+
+                    </h3>
+
+                    <p>
+
+                        {{ area.description }}
+
+                    </p>
+
+                </article>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>

@@ -1,19 +1,57 @@
-SITE = {
+from dataclasses import dataclass
 
-    "name": "Bachkatov",
 
-    "domain": "bachkatov.dev",
+@dataclass(frozen=True)
+class Site:
 
-    "tagline": "Building software, uncovering vulnerabilities, and engineering secure digital experiences.",
+    name: str
 
-    "email": "contact@bachkatov.dev",
+    domain: str
 
-    "github": "https://github.com/Mskre87",
+    tagline: str
 
-    "linkedin": "",
+    email: str
 
-    "hackerone": "",
+    github: str
 
-    "credly": "https://www.credly.com/users/dimitri-bachkatov",
+    linkedin: str
 
-}
+    credly: str
+
+    hackerone: str
+
+    intigriti: str
+
+    resume: str
+
+    copyright: str
+
+
+SITE = Site(
+
+    name="Bachkatov",
+
+    domain="bachkatov.dev",
+
+    tagline=(
+        "Building software, uncovering vulnerabilities, "
+        "and engineering secure digital experiences."
+    ),
+
+    email="contact@bachkatov.dev",
+
+    github="https://github.com/Mskre87",
+
+    linkedin="",
+
+    credly="https://www.credly.com/users/dimitri-bachkatov",
+
+    hackerone="",
+
+    intigriti="",
+
+    resume="",
+
+    copyright="© 2026 Bachkatov. All rights reserved.",
+
+)
