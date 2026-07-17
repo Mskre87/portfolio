@@ -1,15 +1,13 @@
 <section class="hero reveal">
 
-    <div class="container">
+    <div class="container hero__container">
 
         <div class="hero__content fade-in">
 
             <div class="hero__eyebrow">
 
                 <span>Software Engineering</span>
-                <span>-</span>
                 <span>Cybersecurity</span>
-                <span>-</span>
                 <span>Artificial Intelligence</span>
 
             </div>
@@ -25,6 +23,11 @@
                 and engineering secure digital experiences.
             </p>
 
+            <p class="hero__meta">
+                Civil Engineering in Computer Science & Telecommunications student
+                at Universidad Finis Terrae.
+            </p>
+
             <div class="hero__actions">
 
                 <a href="#work" class="button button--primary">
@@ -36,6 +39,17 @@
                 </a>
 
             </div>
+
+        </div>
+
+        {% load static %}
+
+        <div class="hero__visual">
+
+            <img
+                src="{% static 'images/profile/profile.png' %}"
+                alt="Portrait of Dimitri Bachkatov"
+                class="hero__image">
 
         </div>
 

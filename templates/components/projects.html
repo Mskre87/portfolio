@@ -38,6 +38,48 @@
 
                     </ul>
 
+                    <hr class="project-card__divider">
+
+                    <div class="project-card__meta">
+
+                        <div class="project-card__meta-item">
+
+                            <span>Role</span>
+
+                            <strong>{{ project.role }}</strong>
+
+                        </div>
+
+                        <div class="project-card__meta-item">
+
+                            <span>Timeline</span>
+
+                            <strong>{{ project.timeline }}</strong>
+
+                        </div>
+
+                    </div>
+
+                    {% if project.github or project.demo %}
+
+                    <div class="project-card__actions">
+
+                        {% if project.github %}
+                        <a href="{{ project.github }}" target="_blank">
+                            GitHub
+                        </a>
+                        {% endif %}
+
+                        {% if project.demo %}
+                        <a href="{{ project.demo }}" target="_blank">
+                            Live Demo
+                        </a>
+                        {% endif %}
+
+                    </div>
+
+                    {% endif %}
+
                 </article>
 
             {% endfor %}

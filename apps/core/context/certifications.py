@@ -1,37 +1,50 @@
+from dataclasses import dataclass
+
+
+@dataclass(frozen=True)
+class Certification:
+    issuer: str
+    title: str
+    description: str
+    url: str
+    action: str
+
+
 CERTIFICATIONS = [
 
-    {
-        "issuer": "IBM",
+    Certification(
 
-        "title": "9 Verified Badges",
+        issuer="IBM",
 
-        "description": (
+        title="9 Verified Badges",
+
+        description=(
             "Data Science, Python, Data Analysis, "
             "Visualization and related technologies."
         ),
 
-        "url": "https://www.credly.com/users/dimitri-bachkatov",
+        url="https://www.credly.com/users/dimitri-bachkatov",
 
-        "action": "View Credly Profile",
-    },
+        action="View Credly Profile",
 
+    ),
 
-    {
-        "issuer": "English",
+    Certification(
 
-        "title": "C1 English Certificate",
+        issuer="English",
 
-        "description": (
-            "Verified English proficiency (C1)."
-        ),
+        title="C1 English Certificate",
 
-        "url": (
+        description="Verified English proficiency (C1).",
+
+        url=(
             "https://internationalenglishtest.com/"
             "verify-certificate/"
             "758B8DE2A1-758B8DE304-758B8DBA6C"
         ),
 
-        "action": "Verify Certificate",
-    },
+        action="Verify Certificate",
+
+    ),
 
 ]
