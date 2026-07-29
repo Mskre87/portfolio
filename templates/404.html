@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}
+404 | Bachkatov
+{% endblock %}
+
+{% block meta_description %}
+The requested page could not be found.
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero__content">
+
+            <div class="hero__eyebrow">
+                <span>Error 404</span>
+            </div>
+
+            <h1 class="hero__title">
+                Page not found.
+            </h1>
+
+            <p class="hero__description">
+                The page you are looking for doesn't exist or has been moved.
+            </p>
+
+            <div class="hero__actions">
+
+                <a
+                    href="/"
+                    class="button button--primary">
+
+                    Back Home
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -133,7 +133,7 @@
 
         min-height: auto;
 
-        padding-block: 7rem;
+        padding-block: 6rem;
 
     }
 
@@ -141,11 +141,35 @@
 
         grid-template-columns: 1fr;
 
+        gap: 3rem;
+
+    }
+
+    .hero__content {
+
+        order: 2;
+
+        text-align: center;
+
+        max-width: 100%;
+
     }
 
     .hero__visual {
 
-        display: none;
+        order: 1;
+
+        display: flex;
+
+        justify-content: center;
+
+        min-height: auto;
+
+    }
+
+    .hero__actions {
+
+        justify-content: center;
 
     }
 
@@ -156,15 +180,34 @@
     .hero__title {
 
         line-height: 1;
+        text-align: center;
 
     }
 
     .hero__description {
 
         font-size: 1.05rem;
+        text-align: center;
 
     }
 
+    .hero__image {
+
+    width: 260px;
+
+    }
+
+    .hero__eyebrow {
+
+        justify-content: center;
+
+    }
+
+    .hero__meta {
+
+        text-align: center;
+
+    }
 }
 
 .hero__image {

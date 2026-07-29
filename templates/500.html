@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}
+500 | Bachkatov
+{% endblock %}
+
+{% block meta_description %}
+An unexpected server error occurred.
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero__content">
+
+            <div class="hero__eyebrow">
+                <span>Error 500</span>
+            </div>
+
+            <h1 class="hero__title">
+                Something went wrong.
+            </h1>
+
+            <p class="hero__description">
+                An unexpected error occurred while processing your request.
+            </p>
+
+            <div class="hero__actions">
+
+                <a
+                    href="/"
+                    class="button button--primary">
+
+                    Return Home
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

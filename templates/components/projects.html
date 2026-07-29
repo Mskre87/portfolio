@@ -2,19 +2,33 @@
 
     <div class="container">
 
-        {% include "components/ui/section_title.html" with label="Work" title="Selected projects." description="A curated selection of software engineering projects currently under development." %}
+        {% include "components/ui/section_title.html" with label="Work" title="Selected projects." description="A curated selection of software engineering and cybersecurity projects." %}
 
         <div class="projects__list">
 
             {% for project in projects %}
 
-                <article class="project-card">
+                <article class="project-card{% if project.featured %} project-card--featured{% endif %}">
 
-                    <span class="project-card__status">
+                    <div class="project-card__header">
 
-                        {{ project.status }}
+                        {% if project.featured %}
 
-                    </span>
+                            <span class="project-card__featured">
+
+                                Featured Project
+
+                            </span>
+
+                        {% endif %}
+
+                        <span class="project-card__status">
+
+                            {{ project.status }}
+
+                        </span>
+
+                    </div>
 
                     <h3>
 
@@ -65,13 +79,21 @@
                     <div class="project-card__actions">
 
                         {% if project.github %}
-                        <a href="{{ project.github }}" target="_blank">
-                            GitHub
+                        <a
+                            href="{{ project.github }}"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            {{ project.github_label }}
                         </a>
                         {% endif %}
 
                         {% if project.demo %}
-                        <a href="{{ project.demo }}" target="_blank">
+                        <a
+                            href="{{ project.demo }}"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
                             Live Demo
                         </a>
                         {% endif %}

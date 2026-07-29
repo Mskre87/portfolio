@@ -1,0 +1,70 @@
+% ==========================================
+% Typography
+% ==========================================
+
+\usepackage{fontspec}
+
+\setmainfont{Inter}
+
+%------------------------------------------
+% Name
+%------------------------------------------
+
+\newcommand{\ResumeName}[1]{%
+{\fontsize{22}{24}\selectfont
+\bfseries
+\color{TextPrimary}
+#1}
+}
+
+%------------------------------------------
+% Role
+%------------------------------------------
+
+\newcommand{\ResumeRole}[1]{%
+{\fontsize{10}{12}\selectfont
+\color{Accent}
+#1}
+}
+
+%------------------------------------------
+% Project Title
+%------------------------------------------
+
+\newcommand{\ProjectTitle}[1]{%
+{\fontsize{11}{13}\selectfont
+\bfseries
+\color{TextPrimary}
+#1}
+}
+
+%------------------------------------------
+% Body
+%------------------------------------------
+
+\newcommand{\BodyText}[1]{%
+{\fontsize{9.4}{13}\selectfont
+\color{TextPrimary}
+#1}
+}
+
+%------------------------------------------
+% Muted
+%------------------------------------------
+
+\newcommand{\MutedText}[1]{%
+{\fontsize{8.5}{11}\selectfont
+\color{TextSecondary}
+#1}
+}
+
+%------------------------------------------
+% Label
+%------------------------------------------
+
+\newcommand{\LabelText}[1]{%
+{\fontsize{7.8}{9}\selectfont
+\bfseries
+\color{TextSecondary}
+\MakeUppercase{#1}}
+}

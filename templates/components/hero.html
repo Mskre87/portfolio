@@ -1,3 +1,4 @@
+{% load static %}
 <section class="hero reveal">
 
     <div class="container hero__container">
@@ -13,19 +14,25 @@
             </div>
 
             <h1 class="hero__title">
-                Software Engineer
+                Hi, I'm
                 <br>
-                & Security Researcher
+                Dimitri Bachkatov.
             </h1>
 
             <p class="hero__description">
-                Building software, uncovering vulnerabilities,
-                and engineering secure digital experiences.
+                Software Engineering student focused on Cybersecurity & AI,
+                building secure software, exploring vulnerabilities, and
+                engineering modern digital experiences.
             </p>
 
             <p class="hero__meta">
-                Civil Engineering in Computer Science & Telecommunications student
-                at Universidad Finis Terrae.
+                Civil Engineering in Computer Science &
+                Telecommunications student at Universidad Finis Terrae,
+                based in Santiago, Chile.
+            </p>
+            
+            <p class="hero__highlights">
+                9 IBM Certifications • Bug Bounty • Software Engineering • Based in Chile
             </p>
 
             <div class="hero__actions">
@@ -34,9 +41,20 @@
                     View Work
                 </a>
 
-                <a href="#" class="button button--secondary">
-                    Resume
-                </a>
+                {% if site.resume %}
+
+                    <a
+                        href="{% static site.resume %}"
+                        class="button button--secondary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Open resume PDF in a new tab">
+
+                        Resume
+
+                    </a>
+
+                {% endif %}
 
             </div>
 
@@ -44,12 +62,14 @@
 
         <div class="hero__visual">
 
-            {% load static %}
-
             <img
-                src="{% static 'images/profile/profile.png' %}"
+                src="{% static 'images/profile/profile.webp' %}"
                 alt="Portrait of Dimitri Bachkatov"
-                class="hero__image">
+                class="hero__image"
+                width="360"
+                height="360"
+                fetchpriority="high"
+                decoding="async">
 
         </div>
 

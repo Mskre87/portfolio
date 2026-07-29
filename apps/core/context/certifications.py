@@ -14,13 +14,14 @@ CERTIFICATIONS = [
 
     Certification(
 
-        issuer="IBM",
+        issuer="IBM SkillsBuild",
 
-        title="9 Verified Badges",
+        title="9 Verified Professional Credentials",
 
         description=(
-            "Data Science, Python, Data Analysis, "
-            "Visualization and related technologies."
+            "Professional certifications covering Python, Data Science, "
+            "Data Analysis, Data Visualization, Data Science Foundations "
+            "and related technologies."
         ),
 
         url="https://www.credly.com/users/dimitri-bachkatov",
@@ -31,11 +32,14 @@ CERTIFICATIONS = [
 
     Certification(
 
-        issuer="English",
+        issuer="International English Test",
 
-        title="C1 English Certificate",
+        title="English Proficiency (C1)",
 
-        description="Verified English proficiency (C1).",
+        description=(
+            "Verified C1 English proficiency for professional and "
+            "technical communication."
+        ),
 
         url=(
             "https://internationalenglishtest.com/"
@@ -43,7 +47,7 @@ CERTIFICATIONS = [
             "758B8DE2A1-758B8DE304-758B8DBA6C"
         ),
 
-        action="Verify Certificate",
+        action="View Certificate",
 
     ),
 

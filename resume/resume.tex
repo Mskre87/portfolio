@@ -1,0 +1,82 @@
+\documentclass[10pt,a4paper]{article}
+
+% ==========================================
+% Preamble
+% ==========================================
+
+\input{preamble}
+
+% ==========================================
+% Styles
+% ==========================================
+
+\input{styles/colors}
+\input{styles/typography}
+\input{styles/layout}
+
+% ==========================================
+% Components
+% ==========================================
+
+\input{components/header}
+\input{components/section_title}
+\input{components/sidebar}
+\input{components/project_entry}
+\input{components/footer}
+
+% ==========================================
+% Document
+% ==========================================
+
+\begin{document}
+
+\raggedbottom
+
+% ==========================================
+% Header
+% ==========================================
+
+\ResumeHeader
+    {Dimitri Bachkatov Droguett}
+    {Software Engineering Student}
+    {Santiago, Chile}
+    {dimitri@bachkatov.dev}
+    {bachkatov.dev}
+    {https://linkedin.com/in/dimitri-bachkatov-droguett-825986312/}
+
+% ==========================================
+% Two Columns
+% ==========================================
+
+\noindent
+\begin{minipage}[t]{0.29\textwidth}
+
+    \ResumeSidebar{
+
+        \input{content/education}
+
+        \input{content/skills}
+
+        \input{content/certifications}
+
+        \input{content/languages}
+
+    }
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.68\textwidth}
+
+    \input{content/profile}
+
+    \input{content/projects}
+
+\end{minipage}
+
+% ==========================================
+% Footer
+% ==========================================
+
+%\ResumeFooter
+
+\end{document}

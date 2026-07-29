@@ -17,8 +17,9 @@ CURRENT_FOCUS = (
         title="Software Engineering",
 
         description=(
-            "Developing modern web applications with Django while "
-            "improving software architecture, clean code and system design."
+            "Building modern web applications with Django while strengthening "
+            "software architecture, clean code, reusable components and "
+            "scalable system design."
         ),
 
     ),
@@ -30,8 +31,9 @@ CURRENT_FOCUS = (
         title="Cybersecurity",
 
         description=(
-            "Expanding my offensive security knowledge through bug bounty "
-            "programs, vulnerability research and secure software practices."
+            "Developing practical offensive security skills through bug bounty "
+            "programs, web application testing, secure development practices "
+            "and vulnerability research."
         ),
 
     ),
@@ -43,8 +45,8 @@ CURRENT_FOCUS = (
         title="Artificial Intelligence",
 
         description=(
-            "Studying data science, machine learning and AI engineering "
-            "through IBM certifications and personal projects."
+            "Exploring data science, machine learning and AI engineering "
+            "through IBM professional certifications and hands-on projects."
         ),
 
     ),

@@ -6,8 +6,8 @@ NAVIGATION = [
     },
 
     {
-        "title": "Research",
-        "url": "#research",
+        "title": "Focus",
+        "url": "#focus",
     },
 
     {
