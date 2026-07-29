@@ -36,9 +36,15 @@
                 </a>
                 {% endif %}
 
-                <a href="mailto:{{ site.email }}">
+                <button
+                    type="button"
+                    class="footer__link footer__email-copy"
+                    data-email="{{ site.email }}"
+                    aria-label="Copy email address {{ site.email }}">
+
                     Email
-                </a>
+
+                </button>
 
             </nav>
 
@@ -53,6 +59,15 @@
             </p>
 
         </div>
+
+    </div>
+
+    <div
+    
+    class="copy-toast"
+    role="status"
+    aria-live="polite"
+    aria-atomic="true">
 
     </div>
 
