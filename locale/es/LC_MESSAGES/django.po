@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bachkatov.dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-02 18:03-0400\n"
+"POT-Creation-Date: 2026-08-02 18:12-0400\n"
 "PO-Revision-Date: 2026-08-02 17:47-0400\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -14,6 +14,58 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
 "1 : 2;\n"
+
+#: .\apps\core\context\current_focus.py:21
+msgid "Building"
+msgstr "Desarrollando"
+
+#: .\apps\core\context\current_focus.py:23 .\templates\components\hero.html:11
+msgid "Software Engineering"
+msgstr "Ingeniería de Software"
+
+#: .\apps\core\context\current_focus.py:26
+msgid ""
+"Building modern web applications with Django while strengthening software "
+"architecture, clean code, reusable components and scalable system design."
+msgstr ""
+"Desarrollando aplicaciones web modernas con Django mientras fortalezco "
+"conocimientos en arquitectura de software, código limpio, componentes "
+"reutilizables y diseño de sistemas escalables."
+
+#: .\apps\core\context\current_focus.py:35
+msgid "Learning"
+msgstr "Aprendiendo"
+
+#: .\apps\core\context\current_focus.py:37 .\templates\components\hero.html:12
+msgid "Cybersecurity"
+msgstr "Ciberseguridad"
+
+#: .\apps\core\context\current_focus.py:40
+msgid ""
+"Developing practical offensive security skills through bug bounty programs, "
+"web application testing, secure development practices and vulnerability "
+"research."
+msgstr ""
+"Desarrollando habilidades prácticas en seguridad ofensiva mediante programas "
+"de Bug Bounty, pruebas de aplicaciones web, prácticas de desarrollo seguro e "
+"investigación de vulnerabilidades."
+
+#: .\apps\core\context\current_focus.py:49
+msgid "Exploring"
+msgstr "Explorando"
+
+#: .\apps\core\context\current_focus.py:51 .\templates\components\hero.html:13
+msgid "Artificial Intelligence"
+msgstr "Inteligencia Artificial"
+
+#: .\apps\core\context\current_focus.py:54
+msgid ""
+"Exploring data science, machine learning and AI engineering through IBM "
+"professional certifications and hands-on projects."
+msgstr ""
+"Explorando ciencia de datos, machine learning e ingeniería de Inteligencia "
+"Artificial mediante certificaciones profesionales de IBM y proyectos "
+"prácticos."
 
 #: .\apps\core\context\navigation.py:7 .\templates\components\projects.html:3
 msgid "Work"
@@ -97,17 +149,14 @@ msgstr ""
 msgid "Completed"
 msgstr "Completado"
 
-#: .\templates\components\hero.html:11
-msgid "Software Engineering"
-msgstr "Ingeniería de Software"
+msgid "Current Focus"
+msgstr "Enfoque actual"
 
-#: .\templates\components\hero.html:12
-msgid "Cybersecurity"
-msgstr "Ciberseguridad"
+msgid "What I'm working on today."
+msgstr "En lo que estoy trabajando actualmente."
 
-#: .\templates\components\hero.html:13
-msgid "Artificial Intelligence"
-msgstr "Inteligencia Artificial"
+msgid "The areas where I'm continuously learning and building expertise."
+msgstr "Áreas en las que continúo aprendiendo y desarrollando experiencia."
 
 #: .\templates\components\hero.html:18
 msgid "Hi, I'm"
@@ -160,8 +209,7 @@ msgstr "Proyectos seleccionados."
 
 #: .\templates\components\projects.html:5
 msgid "A curated selection of software engineering and cybersecurity projects."
-msgstr ""
-"Una selección de proyectos de ingeniería de software y ciberseguridad."
+msgstr "Una selección de proyectos de ingeniería de software y ciberseguridad."
 
 #: .\templates\components\projects.html:26
 msgid "Featured Project"

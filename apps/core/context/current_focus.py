@@ -1,22 +1,28 @@
 from dataclasses import dataclass
 
+from django.utils.functional import Promise
+from django.utils.translation import gettext_lazy as _
+
+
+TranslatableText = str | Promise
+
 
 @dataclass(frozen=True)
 class FocusArea:
-    status: str
-    title: str
-    description: str
+    status: TranslatableText
+    title: TranslatableText
+    description: TranslatableText
 
 
 CURRENT_FOCUS = (
 
     FocusArea(
 
-        status="Building",
+        status=_("Building"),
 
-        title="Software Engineering",
+        title=_("Software Engineering"),
 
-        description=(
+        description=_(
             "Building modern web applications with Django while strengthening "
             "software architecture, clean code, reusable components and "
             "scalable system design."
@@ -26,11 +32,11 @@ CURRENT_FOCUS = (
 
     FocusArea(
 
-        status="Learning",
+        status=_("Learning"),
 
-        title="Cybersecurity",
+        title=_("Cybersecurity"),
 
-        description=(
+        description=_(
             "Developing practical offensive security skills through bug bounty "
             "programs, web application testing, secure development practices "
             "and vulnerability research."
@@ -40,11 +46,11 @@ CURRENT_FOCUS = (
 
     FocusArea(
 
-        status="Exploring",
+        status=_("Exploring"),
 
-        title="Artificial Intelligence",
+        title=_("Artificial Intelligence"),
 
-        description=(
+        description=_(
             "Exploring data science, machine learning and AI engineering "
             "through IBM professional certifications and hands-on projects."
         ),
