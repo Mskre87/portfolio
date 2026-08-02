@@ -1,11 +1,12 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block title %}
 500 | Bachkatov
 {% endblock %}
 
 {% block meta_description %}
-An unexpected server error occurred.
+{% translate "An unexpected server error occurred." %}
 {% endblock %}
 
 {% block content %}
@@ -21,20 +22,20 @@ An unexpected server error occurred.
             </div>
 
             <h1 class="hero__title">
-                Something went wrong.
+                {% translate "Something went wrong." %}
             </h1>
 
             <p class="hero__description">
-                An unexpected error occurred while processing your request.
+                {% translate "An unexpected error occurred while processing your request." %}
             </p>
 
             <div class="hero__actions">
 
                 <a
-                    href="/"
+                    href="{% url 'home' %}"
                     class="button button--primary">
 
-                    Return Home
+                    {% translate "Return Home" %}
 
                 </a>
 

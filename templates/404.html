@@ -1,11 +1,12 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block title %}
 404 | Bachkatov
 {% endblock %}
 
 {% block meta_description %}
-The requested page could not be found.
+{% translate "The requested page could not be found." %}
 {% endblock %}
 
 {% block content %}
@@ -21,20 +22,20 @@ The requested page could not be found.
             </div>
 
             <h1 class="hero__title">
-                Page not found.
+                {% translate "Page not found." %}
             </h1>
 
             <p class="hero__description">
-                The page you are looking for doesn't exist or has been moved.
+                {% translate "The page you are looking for doesn't exist or has been moved." %}
             </p>
 
             <div class="hero__actions">
 
                 <a
-                    href="/"
+                    href="{% url 'home' %}"
                     class="button button--primary">
 
-                    Back Home
+                    {% translate "Back Home" %}
 
                 </a>
 

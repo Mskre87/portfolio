@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bachkatov.dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-02 19:06-0400\n"
+"POT-Creation-Date: 2026-08-02 19:19-0400\n"
 "PO-Revision-Date: 2026-08-02 17:47-0400\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -218,6 +218,38 @@ msgstr ""
 "Estudiante de Ingeniería de Software, Ciberseguridad, Inteligencia "
 "Artificial, Python, Django, Portafolio, Investigación de Seguridad"
 
+#: .\templates\404.html:9
+msgid "The requested page could not be found."
+msgstr "No se pudo encontrar la página solicitada."
+
+#: .\templates\404.html:25
+msgid "Page not found."
+msgstr "Página no encontrada."
+
+#: .\templates\404.html:29
+msgid "The page you are looking for doesn't exist or has been moved."
+msgstr "La página que buscas no existe o fue movida."
+
+#: .\templates\404.html:38
+msgid "Back Home"
+msgstr "Volver al inicio"
+
+#: .\templates\500.html:9
+msgid "An unexpected server error occurred."
+msgstr "Ocurrió un error inesperado en el servidor."
+
+#: .\templates\500.html:25
+msgid "Something went wrong."
+msgstr "Algo salió mal."
+
+#: .\templates\500.html:29
+msgid "An unexpected error occurred while processing your request."
+msgstr "Ocurrió un error inesperado mientras se procesaba tu solicitud."
+
+#: .\templates\500.html:38
+msgid "Return Home"
+msgstr "Volver al inicio"
+
 #: .\templates\base.html:4
 msgid "Software Engineering Student & Security Researcher"
 msgstr "Estudiante de Ingeniería de Software e Investigador en Ciberseguridad"
@@ -399,3 +431,11 @@ msgstr "Periodo"
 #: .\templates\components\projects.html:108
 msgid "Live Demo"
 msgstr "Demo en vivo"
+
+#: .\templates\pages\ui.html:5
+msgid "UI Kit"
+msgstr "Kit de UI"
+
+#: .\templates\pages\ui.html:17
+msgid "Design System Preview"
+msgstr "Vista previa del sistema de diseño"
