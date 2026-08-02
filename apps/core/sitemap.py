@@ -7,6 +7,12 @@ class StaticViewSitemap(Sitemap):
     priority = 1.0
     changefreq = "monthly"
 
+    i18n = True
+    languages = ("en", "es")
+
+    alternates = True
+    x_default = True
+
     def items(self):
         return [
             "home",
