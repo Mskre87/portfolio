@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bachkatov.dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-02 18:53-0400\n"
+"POT-Creation-Date: 2026-08-02 19:06-0400\n"
 "PO-Revision-Date: 2026-08-02 17:47-0400\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -181,6 +181,54 @@ msgstr ""
 #: .\apps\core\context\projects.py:113
 msgid "Completed"
 msgstr "Completado"
+
+#: .\apps\core\context\site.py:67
+msgid ""
+"Building software, uncovering vulnerabilities, and engineering secure "
+"digital experiences."
+msgstr ""
+"Desarrollando software, descubriendo vulnerabilidades y creando experiencias "
+"digitales seguras."
+
+#: .\apps\core\context\site.py:72
+msgid ""
+"Building secure software, exploring cybersecurity and engineering "
+"intelligent systems."
+msgstr ""
+"Desarrollando software seguro, explorando la ciberseguridad y creando "
+"sistemas inteligentes."
+
+#: .\apps\core\context\site.py:77
+msgid "© 2026 Dimitri Bachkatov. All rights reserved."
+msgstr "© 2026 Dimitri Bachkatov. Todos los derechos reservados."
+
+#: .\apps\core\context\site.py:83
+msgid ""
+"Software Engineering student focused on Cybersecurity and Artificial "
+"Intelligence."
+msgstr ""
+"Estudiante de Ingeniería de Software enfocado en Ciberseguridad e "
+"Inteligencia Artificial."
+
+#: .\apps\core\context\site.py:88
+msgid ""
+"Software Engineering Student, Cybersecurity, Artificial Intelligence, "
+"Python, Django, Portfolio, Security Research"
+msgstr ""
+"Estudiante de Ingeniería de Software, Ciberseguridad, Inteligencia "
+"Artificial, Python, Django, Portafolio, Investigación de Seguridad"
+
+#: .\templates\base.html:4
+msgid "Software Engineering Student & Security Researcher"
+msgstr "Estudiante de Ingeniería de Software e Investigador en Ciberseguridad"
+
+#: .\templates\base.html:5
+msgid "Portfolio"
+msgstr "Portafolio"
+
+#: .\templates\base.html:177
+msgid "Skip to content"
+msgstr "Ir al contenido"
 
 #: .\templates\components\about.html:4
 msgid "Engineering secure software with curiosity and purpose."

@@ -1,5 +1,11 @@
 from dataclasses import dataclass
 
+from django.utils.functional import Promise
+from django.utils.translation import gettext_lazy as _
+
+
+TranslatableText = str | Promise
+
 
 @dataclass(frozen=True)
 class Site:
@@ -13,14 +19,14 @@ class Site:
 
     # Branding
 
-    tagline: str
-    footer_tagline: str
-    copyright: str
+    tagline: TranslatableText
+    footer_tagline: TranslatableText
+    copyright: TranslatableText
 
     # SEO
 
-    description: str
-    keywords: str
+    description: TranslatableText
+    keywords: TranslatableText
     theme_color: str
     og_image: str
 
@@ -57,24 +63,29 @@ SITE = Site(
 
     # Branding
 
-    tagline=(
+    tagline=_(
         "Building software, uncovering vulnerabilities, "
         "and engineering secure digital experiences."
     ),
 
-    footer_tagline="Building secure software, exploring cybersecurity and engineering intelligent systems.",
+    footer_tagline=_(
+        "Building secure software, exploring cybersecurity "
+        "and engineering intelligent systems."
+    ),
 
-    copyright="© 2026 Dimitri Bachkatov. All rights reserved.",
+    copyright=_(
+        "© 2026 Dimitri Bachkatov. All rights reserved."
+    ),
 
     # SEO
 
-    description=(
-        "Software Engineer focused on Software Engineering, "
-        "Cybersecurity and Artificial Intelligence."
+    description=_(
+        "Software Engineering student focused on Cybersecurity "
+        "and Artificial Intelligence."
     ),
 
-    keywords=(
-        "Software Engineer, Cybersecurity, Artificial Intelligence, "
+    keywords=_(
+        "Software Engineering Student, Cybersecurity, Artificial Intelligence, "
         "Python, Django, Portfolio, Security Research"
     ),
 
