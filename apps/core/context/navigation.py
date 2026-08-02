@@ -1,22 +1,25 @@
+from django.utils.translation import gettext_lazy as _
+
+
 NAVIGATION = [
 
     {
-        "title": "Work",
+        "title": _("Work"),
         "url": "#work",
     },
 
     {
-        "title": "Focus",
+        "title": _("Focus"),
         "url": "#focus",
     },
 
     {
-        "title": "Certifications",
+        "title": _("Certifications"),
         "url": "#certifications",
     },
 
     {
-        "title": "About",
+        "title": _("About"),
         "url": "#about",
     },
 

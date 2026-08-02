@@ -1,4 +1,5 @@
-{% load static %}
+{% load static i18n %}
+
 <section class="hero reveal">
 
     <div class="container hero__container">
@@ -7,38 +8,42 @@
 
             <div class="hero__eyebrow">
 
-                <span>Software Engineering</span>
-                <span>Cybersecurity</span>
-                <span>Artificial Intelligence</span>
+                <span>{% translate "Software Engineering" %}</span>
+                <span>{% translate "Cybersecurity" %}</span>
+                <span>{% translate "Artificial Intelligence" %}</span>
 
             </div>
 
             <h1 class="hero__title">
-                Hi, I'm
+                {% translate "Hi, I'm" %}
                 <br>
                 Dimitri Bachkatov.
             </h1>
 
             <p class="hero__description">
-                Software Engineering student focused on Cybersecurity & AI,
-                building secure software, exploring vulnerabilities, and
-                engineering modern digital experiences.
+                {% blocktranslate trimmed %}
+                    Software Engineering student focused on Cybersecurity & AI,
+                    building secure software, exploring vulnerabilities, and
+                    engineering modern digital experiences.
+                {% endblocktranslate %}
             </p>
 
             <p class="hero__meta">
-                Civil Engineering in Computer Science &
-                Telecommunications student at Universidad Finis Terrae,
-                based in Santiago, Chile.
+                {% blocktranslate trimmed %}
+                    Civil Engineering in Computer Science &
+                    Telecommunications student at Universidad Finis Terrae,
+                    based in Santiago, Chile.
+                {% endblocktranslate %}
             </p>
-            
+
             <p class="hero__highlights">
-                9 IBM Certifications • Bug Bounty • Software Engineering • Based in Chile
+                {% translate "9 IBM Certifications • Bug Bounty • Software Engineering • Based in Chile" %}
             </p>
 
             <div class="hero__actions">
 
                 <a href="#work" class="button button--primary">
-                    View Work
+                    {% translate "View Work" %}
                 </a>
 
                 {% if site.resume %}
@@ -48,9 +53,9 @@
                         class="button button--secondary"
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="Open CV PDF in a new tab">
+                        aria-label="{% translate 'Open CV PDF in a new tab' %}">
 
-                        View CV
+                        {% translate "View CV" %}
 
                     </a>
 
@@ -64,7 +69,7 @@
 
             <img
                 src="{% static 'images/profile/profile.webp' %}"
-                alt="Portrait of Dimitri Bachkatov"
+                alt="{% translate 'Portrait of Dimitri Bachkatov' %}"
                 class="hero__image"
                 width="360"
                 height="360"
