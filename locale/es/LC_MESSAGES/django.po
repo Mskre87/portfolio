@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bachkatov.dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-02 18:18-0400\n"
+"POT-Creation-Date: 2026-08-02 18:25-0400\n"
 "PO-Revision-Date: 2026-08-02 17:47-0400\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -40,7 +40,8 @@ msgstr "Dominio de Inglés (C1)"
 msgid ""
 "Verified C1 English proficiency for professional and technical communication."
 msgstr ""
-"Dominio de inglés nivel C1 verificado para comunicación profesional y técnica."
+"Dominio de inglés nivel C1 verificado para comunicación profesional y "
+"técnica."
 
 #: .\apps\core\context\certifications.py:56
 msgid "View Certificate"
@@ -111,7 +112,7 @@ msgstr "Enfoque"
 msgid "Certifications"
 msgstr "Certificaciones"
 
-#: .\apps\core\context\navigation.py:22
+#: .\apps\core\context\navigation.py:22 .\templates\components\about.html:3
 msgid "About"
 msgstr "Sobre mí"
 
@@ -180,6 +181,55 @@ msgstr ""
 #: .\apps\core\context\projects.py:113
 msgid "Completed"
 msgstr "Completado"
+
+#: .\templates\components\about.html:4
+msgid "Engineering secure software with curiosity and purpose."
+msgstr "Desarrollando software seguro con curiosidad y propósito."
+
+#: .\templates\components\about.html:16
+msgid ""
+"I'm Dimitri Bachkatov, a Civil Engineering in Computer Science & "
+"Telecommunications student based in Santiago, Chile."
+msgstr ""
+"Soy Dimitri Bachkatov, estudiante de Ingeniería Civil en Informática y "
+"Telecomunicaciones, en Santiago, Chile."
+
+#: .\templates\components\about.html:23
+msgid ""
+"My primary interests lie in software engineering, cybersecurity and "
+"artificial intelligence. I enjoy designing software that is not only "
+"functional, but also secure, scalable and maintainable through modern "
+"engineering practices."
+msgstr ""
+"Mis principales intereses están en la ingeniería de software, la "
+"ciberseguridad y la inteligencia artificial. Me gusta diseñar software que "
+"no solo sea funcional, sino también seguro, escalable y mantenible mediante "
+"prácticas modernas de ingeniería."
+
+#: .\templates\components\about.html:32
+msgid ""
+"Beyond university, I continuously expand my knowledge through independent "
+"learning, professional certifications and hands-on development. I build "
+"personal projects, study software architecture, explore AI technologies and "
+"participate in bug bounty programs to better understand how real-world "
+"systems are built, secured and improved."
+msgstr ""
+"Más allá de la universidad, continúo ampliando mis conocimientos mediante "
+"aprendizaje independiente, certificaciones profesionales y desarrollo "
+"práctico. Creo proyectos personales, estudio arquitectura de software, "
+"exploro tecnologías de inteligencia artificial y participo en programas de "
+"Bug Bounty para comprender mejor cómo se construyen, protegen y mejoran los "
+"sistemas del mundo real."
+
+#: .\templates\components\about.html:43
+msgid ""
+"My goal is to grow into a software engineer capable of building reliable "
+"products while contributing to secure digital experiences through thoughtful "
+"engineering and continuous learning."
+msgstr ""
+"Mi objetivo es seguir creciendo como ingeniero de software capaz de construir "
+"productos confiables y contribuir a experiencias digitales seguras mediante "
+"una ingeniería cuidadosa y aprendizaje continuo."
 
 #: .\templates\components\certifications.html:4
 msgid "Verified professional credentials."

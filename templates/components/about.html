@@ -1,37 +1,51 @@
+{% load i18n %}
+
+{% translate "About" as about_label %}
+{% translate "Engineering secure software with curiosity and purpose." as about_title %}
+
+
 <section class="about section reveal" id="about">
 
     <div class="container">
 
-        {% include "components/ui/section_title.html" with label="About" title="Engineering secure software with curiosity and purpose." %}
+        {% include "components/ui/section_title.html" with label=about_label title=about_title %}
 
         <div class="about__content">
 
             <p>
-                I'm Dimitri Bachkatov, a Civil Engineering in Computer Science &
-                Telecommunications student based in Santiago, Chile.
+                {% blocktranslate trimmed %}
+                    I'm Dimitri Bachkatov, a Civil Engineering in Computer Science &
+                    Telecommunications student based in Santiago, Chile.
+                {% endblocktranslate %}
             </p>
 
             <p>
-                My primary interests lie in software engineering, cybersecurity
-                and artificial intelligence. I enjoy designing software that is
-                not only functional, but also secure, scalable and maintainable
-                through modern engineering practices.
+                {% blocktranslate trimmed %}
+                    My primary interests lie in software engineering, cybersecurity
+                    and artificial intelligence. I enjoy designing software that is
+                    not only functional, but also secure, scalable and maintainable
+                    through modern engineering practices.
+                {% endblocktranslate %}
             </p>
 
             <p>
-                Beyond university, I continuously expand my knowledge through
-                independent learning, professional certifications and hands-on
-                development. I build personal projects, study software
-                architecture, explore AI technologies and participate in bug
-                bounty programs to better understand how real-world systems are
-                built, secured and improved.
+                {% blocktranslate trimmed %}
+                    Beyond university, I continuously expand my knowledge through
+                    independent learning, professional certifications and hands-on
+                    development. I build personal projects, study software
+                    architecture, explore AI technologies and participate in bug
+                    bounty programs to better understand how real-world systems are
+                    built, secured and improved.
+                {% endblocktranslate %}
             </p>
 
             <p>
-                My goal is to grow into a software engineer capable of building
-                reliable products while contributing to secure digital
-                experiences through thoughtful engineering and continuous
-                learning.
+                {% blocktranslate trimmed %}
+                    My goal is to grow into a software engineer capable of building
+                    reliable products while contributing to secure digital
+                    experiences through thoughtful engineering and continuous
+                    learning.
+                {% endblocktranslate %}
             </p>
 
         </div>
