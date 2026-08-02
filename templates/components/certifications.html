@@ -1,8 +1,15 @@
+{% load i18n %}
+
+{% translate "Certifications" as certifications_label %}
+{% translate "Verified professional credentials." as certifications_title %}
+{% translate "Professional certifications and verified credentials from IBM and internationally recognized organizations." as certifications_description %}
+
+
 <section class="certifications section reveal" id="certifications">
 
     <div class="container">
 
-        {% include "components/ui/section_title.html" with label="Certifications" title="Verified professional credentials." description="Professional certifications and verified credentials from IBM and internationally recognized organizations." %}
+        {% include "components/ui/section_title.html" with label=certifications_label title=certifications_title description=certifications_description %}
 
         <div class="certifications__grid">
 
@@ -14,16 +21,13 @@
                         {{ certification.issuer }}
                     </span>
 
-
                     <h3>
                         {{ certification.title }}
                     </h3>
 
-
                     <p>
                         {{ certification.description }}
                     </p>
-
 
                     <a
                         href="{{ certification.url }}"

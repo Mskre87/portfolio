@@ -1,13 +1,19 @@
 from dataclasses import dataclass
 
+from django.utils.functional import Promise
+from django.utils.translation import gettext_lazy as _
+
+
+TranslatableText = str | Promise
+
 
 @dataclass(frozen=True)
 class Certification:
     issuer: str
-    title: str
-    description: str
+    title: TranslatableText
+    description: TranslatableText
     url: str
-    action: str
+    action: TranslatableText
 
 
 CERTIFICATIONS = [
@@ -16,9 +22,9 @@ CERTIFICATIONS = [
 
         issuer="IBM SkillsBuild",
 
-        title="9 Verified Professional Credentials",
+        title=_("9 Verified Professional Credentials"),
 
-        description=(
+        description=_(
             "Professional certifications covering Python, Data Science, "
             "Data Analysis, Data Visualization, Data Science Foundations "
             "and related technologies."
@@ -26,7 +32,7 @@ CERTIFICATIONS = [
 
         url="https://www.credly.com/users/dimitri-bachkatov",
 
-        action="View Credly Profile",
+        action=_("View Credly Profile"),
 
     ),
 
@@ -34,9 +40,9 @@ CERTIFICATIONS = [
 
         issuer="International English Test",
 
-        title="English Proficiency (C1)",
+        title=_("English Proficiency (C1)"),
 
-        description=(
+        description=_(
             "Verified C1 English proficiency for professional and "
             "technical communication."
         ),
@@ -47,7 +53,7 @@ CERTIFICATIONS = [
             "758B8DE2A1-758B8DE304-758B8DBA6C"
         ),
 
-        action="View Certificate",
+        action=_("View Certificate"),
 
     ),
 

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bachkatov.dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-02 18:12-0400\n"
+"POT-Creation-Date: 2026-08-02 18:18-0400\n"
 "PO-Revision-Date: 2026-08-02 17:47-0400\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -14,6 +14,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
 "1 : 2;\n"
+
+#: .\apps\core\context\certifications.py:25
+msgid "9 Verified Professional Credentials"
+msgstr "9 credenciales profesionales verificadas"
+
+#: .\apps\core\context\certifications.py:28
+msgid ""
+"Professional certifications covering Python, Data Science, Data Analysis, "
+"Data Visualization, Data Science Foundations and related technologies."
+msgstr ""
+"Certificaciones profesionales que abarcan Python, Ciencia de Datos, Análisis "
+"de Datos, Visualización de Datos, Fundamentos de Ciencia de Datos y "
+"tecnologías relacionadas."
+
+#: .\apps\core\context\certifications.py:35
+msgid "View Credly Profile"
+msgstr "Ver perfil de Credly"
+
+#: .\apps\core\context\certifications.py:43
+msgid "English Proficiency (C1)"
+msgstr "Dominio de Inglés (C1)"
+
+#: .\apps\core\context\certifications.py:46
+msgid ""
+"Verified C1 English proficiency for professional and technical communication."
+msgstr ""
+"Dominio de inglés nivel C1 verificado para comunicación profesional y técnica."
+
+#: .\apps\core\context\certifications.py:56
+msgid "View Certificate"
+msgstr "Ver certificado"
 
 #: .\apps\core\context\current_focus.py:21
 msgid "Building"
@@ -76,6 +107,7 @@ msgid "Focus"
 msgstr "Enfoque"
 
 #: .\apps\core\context\navigation.py:17
+#: .\templates\components\certifications.html:3
 msgid "Certifications"
 msgstr "Certificaciones"
 
@@ -149,12 +181,27 @@ msgstr ""
 msgid "Completed"
 msgstr "Completado"
 
+#: .\templates\components\certifications.html:4
+msgid "Verified professional credentials."
+msgstr "Credenciales profesionales verificadas."
+
+#: .\templates\components\certifications.html:5
+msgid ""
+"Professional certifications and verified credentials from IBM and "
+"internationally recognized organizations."
+msgstr ""
+"Certificaciones profesionales y credenciales verificadas de IBM y "
+"organizaciones reconocidas internacionalmente."
+
+#: .\templates\components\current_focus.html:3
 msgid "Current Focus"
 msgstr "Enfoque actual"
 
+#: .\templates\components\current_focus.html:4
 msgid "What I'm working on today."
 msgstr "En lo que estoy trabajando actualmente."
 
+#: .\templates\components\current_focus.html:5
 msgid "The areas where I'm continuously learning and building expertise."
 msgstr "Áreas en las que continúo aprendiendo y desarrollando experiencia."
 
