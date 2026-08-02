@@ -1,8 +1,15 @@
+{% load i18n %}
+
+{% translate "Work" as projects_label %}
+{% translate "Selected projects." as projects_title %}
+{% translate "A curated selection of software engineering and cybersecurity projects." as projects_description %}
+
+
 <section class="projects section reveal" id="work">
 
     <div class="container">
 
-        {% include "components/ui/section_title.html" with label="Work" title="Selected projects." description="A curated selection of software engineering and cybersecurity projects." %}
+        {% include "components/ui/section_title.html" with label=projects_label title=projects_title description=projects_description %}
 
         <div class="projects__list">
 
@@ -16,7 +23,7 @@
 
                             <span class="project-card__featured">
 
-                                Featured Project
+                                {% translate "Featured Project" %}
 
                             </span>
 
@@ -58,7 +65,7 @@
 
                         <div class="project-card__meta-item">
 
-                            <span>Role</span>
+                            <span>{% translate "Role" %}</span>
 
                             <strong>{{ project.role }}</strong>
 
@@ -66,7 +73,7 @@
 
                         <div class="project-card__meta-item">
 
-                            <span>Timeline</span>
+                            <span>{% translate "Timeline" %}</span>
 
                             <strong>{{ project.timeline }}</strong>
 
@@ -76,29 +83,35 @@
 
                     {% if project.github or project.demo %}
 
-                    <div class="project-card__actions">
+                        <div class="project-card__actions">
 
-                        {% if project.github %}
-                        <a
-                            href="{{ project.github }}"
-                            target="_blank"
-                            rel="noopener noreferrer">
+                            {% if project.github %}
 
-                            {{ project.github_label }}
-                        </a>
-                        {% endif %}
+                                <a
+                                    href="{{ project.github }}"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
 
-                        {% if project.demo %}
-                        <a
-                            href="{{ project.demo }}"
-                            target="_blank"
-                            rel="noopener noreferrer">
+                                    {{ project.github_label }}
 
-                            Live Demo
-                        </a>
-                        {% endif %}
+                                </a>
 
-                    </div>
+                            {% endif %}
+
+                            {% if project.demo %}
+
+                                <a
+                                    href="{{ project.demo }}"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    {% translate "Live Demo" %}
+
+                                </a>
+
+                            {% endif %}
+
+                        </div>
 
                     {% endif %}
 

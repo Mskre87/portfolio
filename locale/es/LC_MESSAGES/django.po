@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bachkatov.dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-02 17:47-0400\n"
+"POT-Creation-Date: 2026-08-02 18:03-0400\n"
 "PO-Revision-Date: 2026-08-02 17:47-0400\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
 "1 : 2;\n"
 
-#: .\apps\core\context\navigation.py:7
+#: .\apps\core\context\navigation.py:7 .\templates\components\projects.html:3
 msgid "Work"
 msgstr "Proyectos"
 
@@ -30,6 +30,72 @@ msgstr "Certificaciones"
 #: .\apps\core\context\navigation.py:22
 msgid "About"
 msgstr "Sobre mí"
+
+#: .\apps\core\context\projects.py:30
+msgid ""
+"Autonomous security research ecosystem composed of 12 containerized services "
+"for web reconnaissance, source-code intelligence, secret detection, reverse "
+"engineering, mobile and Web3 analysis, CI/CD inspection, DNS reconnaissance "
+"and cross-module event correlation. The public repository contains the "
+"technical architecture and documentation, while the operational code remains "
+"private."
+msgstr ""
+"Ecosistema autónomo de investigación en ciberseguridad compuesto por 12 "
+"servicios en contenedores para reconocimiento web, inteligencia de código "
+"fuente, detección de secretos, ingeniería inversa, análisis móvil y Web3, "
+"inspección de CI/CD, reconocimiento DNS y correlación de eventos entre "
+"módulos. El repositorio público contiene la arquitectura técnica y la "
+"documentación, mientras que el código operativo permanece privado."
+
+#: .\apps\core\context\projects.py:51
+msgid "Operational"
+msgstr "Operativo"
+
+#: .\apps\core\context\projects.py:53
+msgid "Creator & Software Engineer"
+msgstr "Creador e Ingeniero de Software"
+
+#: .\apps\core\context\projects.py:55 .\apps\core\context\projects.py:88
+msgid "2026 – Present"
+msgstr "2026 – Actualidad"
+
+#: .\apps\core\context\projects.py:63
+msgid "View Documentation"
+msgstr "Ver documentación"
+
+#: .\apps\core\context\projects.py:70
+msgid ""
+"Personal portfolio engineered with Django using a modular architecture, "
+"reusable components and modern frontend practices. Designed to showcase "
+"software engineering projects, cybersecurity research and continuous "
+"learning."
+msgstr ""
+"Portafolio personal desarrollado con Django utilizando una arquitectura "
+"modular, componentes reutilizables y prácticas modernas de frontend. "
+"Diseñado para presentar proyectos de ingeniería de software, investigación "
+"en ciberseguridad y aprendizaje continuo."
+
+#: .\apps\core\context\projects.py:84
+msgid "In Progress"
+msgstr "En desarrollo"
+
+#: .\apps\core\context\projects.py:86 .\apps\core\context\projects.py:115
+msgid "Full Stack Developer"
+msgstr "Desarrollador Full Stack"
+
+#: .\apps\core\context\projects.py:99
+msgid ""
+"University recruitment platform developed for Universidad Finis Terrae, "
+"connecting students and companies through a centralized job portal with "
+"dedicated experiences for applicants and employers."
+msgstr ""
+"Plataforma universitaria de empleabilidad desarrollada para la Universidad "
+"Finis Terrae, conectando estudiantes y empresas mediante un portal laboral "
+"centralizado con experiencias diferenciadas para postulantes y empleadores."
+
+#: .\apps\core\context\projects.py:113
+msgid "Completed"
+msgstr "Completado"
 
 #: .\templates\components\hero.html:11
 msgid "Software Engineering"
@@ -69,20 +135,46 @@ msgstr ""
 msgid ""
 "9 IBM Certifications • Bug Bounty • Software Engineering • Based in Chile"
 msgstr ""
-"9 certificaciones de IBM • Bug Bounty • Ingeniería de Software • Santiago, Chile"
+"9 certificaciones de IBM • Bug Bounty • Ingeniería de Software • Santiago, "
+"Chile"
 
 #: .\templates\components\hero.html:46
 msgid "View Work"
 msgstr "Ver proyectos"
 
-#: .\templates\components\hero.html:56
+#: .\templates\components\hero.html:56 .\templates\components\navbar.html:87
 msgid "Open CV PDF in a new tab"
 msgstr "Abrir CV en PDF en una nueva pestaña"
 
-#: .\templates\components\hero.html:58
+#: .\templates\components\hero.html:58 .\templates\components\navbar.html:89
 msgid "View CV"
 msgstr "Ver CV"
 
 #: .\templates\components\hero.html:72
 msgid "Portrait of Dimitri Bachkatov"
 msgstr "Retrato de Dimitri Bachkatov"
+
+#: .\templates\components\projects.html:4
+msgid "Selected projects."
+msgstr "Proyectos seleccionados."
+
+#: .\templates\components\projects.html:5
+msgid "A curated selection of software engineering and cybersecurity projects."
+msgstr ""
+"Una selección de proyectos de ingeniería de software y ciberseguridad."
+
+#: .\templates\components\projects.html:26
+msgid "Featured Project"
+msgstr "Proyecto destacado"
+
+#: .\templates\components\projects.html:68
+msgid "Role"
+msgstr "Rol"
+
+#: .\templates\components\projects.html:76
+msgid "Timeline"
+msgstr "Periodo"
+
+#: .\templates\components\projects.html:108
+msgid "Live Demo"
+msgstr "Demo en vivo"
