@@ -135,3 +135,139 @@
     color:white;
 
 }
+
+/* ========================================
+   NAVBAR ACTIONS
+======================================== */
+
+.navbar__actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .75rem;
+
+}
+
+
+/* ========================================
+   LANGUAGE SWITCHER
+======================================== */
+
+.navbar__language {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: .45rem;
+
+    min-width: 64px;
+
+    height: 44px;
+
+    padding: 0 .85rem;
+
+    border: 1px solid rgba(139, 92, 246, .4);
+
+    border-radius: 999px;
+
+    background: rgba(139, 92, 246, .08);
+
+    color: var(--color-text-secondary);
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    letter-spacing: .04em;
+
+    text-decoration: none;
+
+    transition:
+        color .25s ease,
+        border-color .25s ease,
+        background .25s ease,
+        transform .25s ease;
+
+}
+
+.navbar__language:hover {
+
+    color: var(--color-accent);
+
+    border-color: var(--color-accent);
+
+    background: rgba(139, 92, 246, .15);
+
+    transform: translateY(-1px);
+
+}
+
+.navbar__language:focus-visible {
+
+    outline: 2px solid var(--color-accent);
+
+    outline-offset: 3px;
+
+}
+
+.navbar__language-flag {
+
+    display: block;
+
+    width: 22px;
+
+    height: 15px;
+
+    object-fit: cover;
+
+    border-radius: 2px;
+
+    flex-shrink: 0;
+
+}
+
+.navbar__language-label {
+
+    line-height: 1;
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 900px){
+
+    .navbar__links{
+
+        display:none;
+
+    }
+
+    .navbar__actions {
+
+        gap: .5rem;
+
+    }
+
+    .navbar__language {
+
+        min-width: 60px;
+
+        height: 40px;
+
+        padding: 0 .7rem;
+
+        font-size: .75rem;
+
+        gap: .35rem;
+
+    }
+
+}
