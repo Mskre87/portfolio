@@ -194,7 +194,7 @@ GitHub
 
 https://github.com/Mskre87
 
-Future website
+Website
 
 https://bachkatov.dev
 
