@@ -124,19 +124,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const email = emailButton.dataset.email;
 
+            const successMessage = emailButton.dataset.copySuccess;
+
+            const errorMessage = emailButton.dataset.copyError;
+
+            const copiedLabel = emailButton.dataset.copiedLabel;
+
+
             if (!email) {
                 return;
             }
+
 
             try {
 
                 await copyText(email);
 
-                showToast("Email copied to clipboard");
+                showToast(successMessage);
 
-                const originalText = emailButton.textContent;
+                const originalText = emailButton.textContent.trim();
 
-                emailButton.textContent = "Copied!";
+                emailButton.textContent = copiedLabel;
 
                 window.setTimeout(() => {
 
@@ -148,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 console.error("Unable to copy email:", error);
 
-                showToast("Could not copy the email");
+                showToast(errorMessage);
 
             }
 

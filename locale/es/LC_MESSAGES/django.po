@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bachkatov.dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-02 18:25-0400\n"
+"POT-Creation-Date: 2026-08-02 18:53-0400\n"
 "PO-Revision-Date: 2026-08-02 17:47-0400\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -227,9 +227,9 @@ msgid ""
 "products while contributing to secure digital experiences through thoughtful "
 "engineering and continuous learning."
 msgstr ""
-"Mi objetivo es seguir creciendo como ingeniero de software capaz de construir "
-"productos confiables y contribuir a experiencias digitales seguras mediante "
-"una ingeniería cuidadosa y aprendizaje continuo."
+"Mi objetivo es seguir creciendo como ingeniero de software capaz de "
+"construir productos confiables y contribuir a experiencias digitales seguras "
+"mediante una ingeniería cuidadosa y aprendizaje continuo."
 
 #: .\templates\components\certifications.html:4
 msgid "Verified professional credentials."
@@ -254,6 +254,34 @@ msgstr "En lo que estoy trabajando actualmente."
 #: .\templates\components\current_focus.html:5
 msgid "The areas where I'm continuously learning and building expertise."
 msgstr "Áreas en las que continúo aprendiendo y desarrollando experiencia."
+
+#: .\templates\components\footer.html:3
+msgid "Footer navigation"
+msgstr "Navegación del pie de página"
+
+#: .\templates\components\footer.html:4
+msgid "Copy email address"
+msgstr "Copiar dirección de correo"
+
+#: .\templates\components\footer.html:5
+msgid "Email copied to clipboard"
+msgstr "Correo copiado al portapapeles"
+
+#: .\templates\components\footer.html:6
+msgid "Could not copy the email"
+msgstr "No se pudo copiar el correo"
+
+#: .\templates\components\footer.html:7
+msgid "Copied!"
+msgstr "¡Copiado!"
+
+#: .\templates\components\footer.html:74
+msgid "Email"
+msgstr "Correo"
+
+#: .\templates\components\footer.html:87
+msgid "Built with Django."
+msgstr "Desarrollado con Django."
 
 #: .\templates\components\hero.html:18
 msgid "Hi, I'm"

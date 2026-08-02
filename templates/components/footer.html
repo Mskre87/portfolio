@@ -1,3 +1,12 @@
+{% load i18n %}
+
+{% translate "Footer navigation" as footer_nav_label %}
+{% translate "Copy email address" as copy_email_label %}
+{% translate "Email copied to clipboard" as copy_success %}
+{% translate "Could not copy the email" as copy_error %}
+{% translate "Copied!" as copied_label %}
+
+
 <footer class="footer">
 
     <div class="container">
@@ -16,23 +25,40 @@
 
             </div>
 
-            <nav class="footer__links" aria-label="Footer navigation">
+            <nav
+                class="footer__links"
+                aria-label="{{ footer_nav_label }}">
 
                 {% if site.github %}
-                <a href="{{ site.github }}" target="_blank" rel="noopener noreferrer">
+                <a
+                    href="{{ site.github }}"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
                     GitHub
+
                 </a>
                 {% endif %}
 
                 {% if site.linkedin %}
-                <a href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">
+                <a
+                    href="{{ site.linkedin }}"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
                     LinkedIn
+
                 </a>
                 {% endif %}
 
                 {% if site.credly %}
-                <a href="{{ site.credly }}" target="_blank" rel="noopener noreferrer">
+                <a
+                    href="{{ site.credly }}"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
                     Credly
+
                 </a>
                 {% endif %}
 
@@ -40,9 +66,12 @@
                     type="button"
                     class="footer__link footer__email-copy"
                     data-email="{{ site.email }}"
-                    aria-label="Copy email address {{ site.email }}">
+                    data-copy-success="{{ copy_success }}"
+                    data-copy-error="{{ copy_error }}"
+                    data-copied-label="{{ copied_label }}"
+                    aria-label="{{ copy_email_label }} {{ site.email }}">
 
-                    Email
+                    {% translate "Email" %}
 
                 </button>
 
@@ -55,7 +84,7 @@
             <p>{{ site.copyright }}</p>
 
             <p>
-                Built with Django.
+                {% translate "Built with Django." %}
             </p>
 
         </div>
@@ -63,12 +92,10 @@
     </div>
 
     <div
-    
-    class="copy-toast"
-    role="status"
-    aria-live="polite"
-    aria-atomic="true">
-
+        class="copy-toast"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true">
     </div>
 
 </footer>
