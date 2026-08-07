@@ -29,7 +29,7 @@ Establish a clean, maintainable and production-ready portfolio.
 
 Status:
 
-**In Progress**
+**Complete**
 
 ---
 
@@ -39,13 +39,17 @@ Status:
 
 Publish real projects.
 
-### Planned additions
+Status:
 
-- GitHub repositories
-- Project thumbnails
-- Live demos
-- Technology tags
-- Featured projects
+**In Progress**
+
+### Current / planned additions
+
+- GitHub repositories — implemented
+- Technology tags — implemented
+- Featured projects — implemented
+- Live demos — implemented where applicable
+- Project thumbnails — planned
 
 ---
 

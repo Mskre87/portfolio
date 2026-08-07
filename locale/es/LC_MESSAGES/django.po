@@ -439,3 +439,28 @@ msgstr "Kit de UI"
 #: .\templates\pages\ui.html:17
 msgid "Design System Preview"
 msgstr "Vista previa del sistema de diseño"
+
+#: apps/core/context/projects.py
+msgid "Autonomous Web3 security research system for continuous public smart-contract repository monitoring and dynamic analysis. It combines Forge and Echidna fuzzing with invariant testing, rotating target discovery and AI-assisted compilation-environment recovery. The public repository documents the architecture while the production runtime remains private."
+msgstr "Sistema autónomo de investigación de seguridad Web3 para el monitoreo continuo de repositorios públicos de contratos inteligentes y análisis dinámico. Combina fuzzing con Forge y Echidna, pruebas de invariantes, descubrimiento rotativo de objetivos y recuperación del entorno de compilación asistida por IA. El repositorio público documenta la arquitectura, mientras que el runtime de producción permanece privado."
+
+#: apps/core/context/projects.py
+msgid "Autonomous semantic fuzzing and LLM red-teaming system for authorized AI security research. Hydra uses local AI-assisted mutation and semantic response evaluation, target-specific request adaptation, configurable routing and automated research triage. The public repository documents the architecture while the operational runtime and research corpus remain private."
+msgstr "Sistema autónomo de fuzzing semántico y red teaming de LLMs para investigación autorizada de seguridad en IA. Hydra utiliza mutación asistida por IA local y evaluación semántica de respuestas, adaptación de solicitudes específica por objetivo, enrutamiento configurable y triaje automatizado de investigación. El repositorio público documenta la arquitectura, mientras que el runtime operativo y el corpus de investigación permanecen privados."
+
+#: apps/core/context/projects.py
+msgid "Personal portfolio engineered with Django using a modular architecture, reusable components and modern frontend practices. Deployed in production to showcase software engineering projects, cybersecurity research, artificial intelligence work and continuous learning."
+msgstr "Portafolio personal desarrollado con Django utilizando una arquitectura modular, componentes reutilizables y prácticas modernas de frontend. Desplegado en producción para presentar proyectos de ingeniería de software, investigación en ciberseguridad, trabajos de inteligencia artificial y aprendizaje continuo."
+
+#: apps/core/context/projects.py
+msgid "Live"
+msgstr "En línea"
+
+#: apps/core/context/projects.py
+msgid "View Source"
+msgstr "Ver código"
+
+#: templates/components/projects.html
+msgid "A curated selection of software engineering, cybersecurity and AI research projects."
+msgstr "Una selección de proyectos de ingeniería de software, ciberseguridad e investigación en IA."
+

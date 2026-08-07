@@ -1,27 +1,46 @@
 # Bachkatov Portfolio
 
-A modern portfolio built with **Django**, designed to showcase software engineering projects, cybersecurity research, and artificial intelligence work through a clean, maintainable and scalable architecture.
+A production portfolio built with **Django** to showcase software engineering, cybersecurity research, artificial intelligence work and selected technical projects through a clean, maintainable and scalable architecture.
 
 The project emphasizes modular design, reusable components, structured documentation and long-term maintainability rather than relying on third-party templates or website builders.
 
 ---
 
-## Preview
+## Live Website
 
-> Screenshots will be added after the first production release.
+**Production:** https://bachkatov.dev
+
+**Repository:** https://github.com/Mskre87/portfolio
+
+---
+
+## Featured Work
+
+The portfolio currently highlights independent software engineering and security-research projects, including the main systems developed under **Phantom Platform**:
+
+- **Phantom Ecosystem** — autonomous security research ecosystem composed of 12 specialized services.
+- **Phantom Leviathan** — autonomous Web3 smart-contract analysis and dynamic fuzzing system.
+- **Phantom Hydra** — autonomous semantic fuzzing and LLM red-teaming system for authorized AI security research.
+- **Finis Trabaja** — university recruitment platform built with Flask and SQL Server.
+- **bachkatov.dev** — the portfolio platform itself, built and deployed with Django.
+
+The public Phantom repositories contain architecture and technical documentation only; operational runtimes, credentials, private configuration and sensitive research data remain private.
 
 ---
 
 ## Features
 
 - Modern and responsive interface
-- Component-based template architecture
+- Component-based Django template architecture
 - Modular CSS architecture
 - Context-driven content management
 - Reusable UI components
+- English / Spanish localization
 - SEO-ready structure
 - Accessibility improvements
-- Production-ready project organization
+- Production deployment configuration
+- Downloadable technical resume
+- Project cards with documentation, source and live-demo links
 
 ---
 
@@ -31,12 +50,18 @@ The project emphasizes modular design, reusable components, structured documenta
 
 - Python 3
 - Django 5
+- Gunicorn
 
 ### Frontend
 
 - HTML5
 - CSS3
 - Vanilla JavaScript
+
+### Production
+
+- WhiteNoise
+- Railway
 
 ### Development
 
@@ -48,7 +73,7 @@ The project emphasizes modular design, reusable components, structured documenta
 
 ## Project Structure
 
-```
+```text
 apps/
     core/
         context/
@@ -61,18 +86,22 @@ config/
 
 docs/
 
+locale/
+
 static/
     css/
     js/
     images/
     fonts/
-    icons/
+    documents/
     favicon/
 
 templates/
     components/
     layouts/
     pages/
+
+resume/
 ```
 
 ---
@@ -86,33 +115,33 @@ The project follows a modular Django architecture.
 - Styling is organized using a layered CSS architecture.
 - Global data is injected through Django Context Processors.
 - Static assets are organized by responsibility.
+- Environment-specific Django settings separate development and production behavior.
 
-More details are available in:
-
-- `docs/architecture.md`
+More details are available in `docs/architecture.md`.
 
 ---
 
 ## Documentation
 
-Additional documentation can be found inside the `docs/` directory.
+Additional documentation is maintained inside the `docs/` directory.
 
 | Document | Description |
-|----------|-------------|
-| architecture.md | Project architecture |
-| coding-standards.md | Coding conventions |
-| deployment.md | Production deployment |
-| design-system.md | Design guidelines |
-| roadmap.md | Project roadmap |
+|---|---|
+| `architecture.md` | Project architecture |
+| `coding-standards.md` | Coding conventions |
+| `deployment.md` | Production deployment |
+| `design-system.md` | Design guidelines |
+| `roadmap.md` | Project roadmap |
 
 ---
 
-## Getting Started
+## Local Development
 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/Mskre87/bachkatov-portfolio.git
+git clone https://github.com/Mskre87/portfolio.git
+cd portfolio
 ```
 
 ### Create a virtual environment
@@ -121,15 +150,13 @@ git clone https://github.com/Mskre87/bachkatov-portfolio.git
 python -m venv .venv
 ```
 
-Activate it.
-
-Windows
+Activate it on Windows:
 
 ```bash
 .venv\Scripts\activate
 ```
 
-Linux / macOS
+Or on Linux / macOS:
 
 ```bash
 source .venv/bin/activate
@@ -141,38 +168,49 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+### Configure the environment
+
+Use `.env.example` as the reference for local environment variables. Do not commit production secrets.
+
 ### Run the development server
 
 ```bash
 python manage.py runserver
 ```
 
-Open:
+Then open:
 
-```
+```text
 http://127.0.0.1:8000/
 ```
 
 ---
 
-## Roadmap
+## Status
 
-Current development focuses on:
+**Production / Live**
 
-- Production deployment
-- Performance optimization
-- SEO improvements
-- Accessibility improvements
-- Publishing software engineering projects
-- Publishing cybersecurity research
+Current public baseline:
+
+**v1.0.0**
+
+The portfolio is actively maintained and continues to evolve as new engineering and security-research projects are published.
 
 ---
 
-## Status
+## Roadmap
 
-Current version:
+Ongoing development focuses on:
 
-**Version 1.0 (In Development)**
+- Publishing new software engineering and security-research projects
+- Expanding technical project documentation
+- Performance optimization
+- SEO improvements
+- Accessibility improvements
+- Technical writing and case studies
+- Long-term content and project discoverability
+
+See `docs/roadmap.md` for the long-term project direction.
 
 ---
 
@@ -188,15 +226,10 @@ See the `LICENSE` file for details.
 
 **Dimitri Bachkatov**
 
-Software Engineer • Cybersecurity • Artificial Intelligence
+Software Engineering • Cybersecurity • Artificial Intelligence
 
-GitHub
-
-https://github.com/Mskre87
-
-Website
-
-https://bachkatov.dev
+- GitHub: https://github.com/Mskre87
+- Website: https://bachkatov.dev
 
 ---
 
